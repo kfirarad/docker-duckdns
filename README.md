@@ -8,6 +8,9 @@ The default parameters can be overridden by setting environment variables on the
  * **DUCKDNS_TOKEN** - DuckDNS authentication token copied from duckdns.org -> install -> linux cron, e.g. 1234abcd-abcd-1234-abcd-123456789abc
  * **DUCKDNS_IP** - IP-address to update with. Defaults to the IP-address of the Docker host machine.
  * **DUCKDNS_UPDATE_INTERVAL=600** - Interval in seconds to sleep between updates. Defaults to 1800 seconds = 30 minutes.
+ * **DUCKDNS_REMOTE_DETECT_IP** - `false` will let the container determine the
+   external IP to be passed to Duck DNS. `true` will skip this logic and let
+   Duck DNS determine the IP. (Defaults to `false`.)
 
 ## Deployment
 
