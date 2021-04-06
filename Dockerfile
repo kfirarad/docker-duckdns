@@ -1,7 +1,4 @@
-FROM alpine:latest
-
-# Install curl
-RUN apk add --update curl
+FROM curlimages/curl
 
 # Launch script that runs updater and loops
 COPY launch.sh /
